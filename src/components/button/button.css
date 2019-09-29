@@ -1,0 +1,33 @@
+.controls > div {
+    width: 74px;
+    height: 74px;
+    border: 1px solid #628ff8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.controls > .zero {
+    width: 150px;
+}
+
+.controls button {
+    border: none;
+    width: 74px;
+    height: 75px;
+    cursor: pointer;
+    background: #fff;
+    color: #2a2b2f;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.controls button:hover, .controls button:focus{
+    background: rgba(47,106,245,0.4);
+}
+
+
+.zero > button {
+    width: 150px;
+}

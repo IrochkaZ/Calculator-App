@@ -1,0 +1,23 @@
+.panel {
+    min-width: 302px;
+    display: flex;
+    flex-flow: column;
+    padding: 4px 0px 4px 0px;
+    background: #000;
+    border: 1px solid #628ff8;
+}
+
+.panel p {
+    text-align: right;
+    color: #fff;
+    padding: 0 15px;
+}
+
+p.str-result {
+    font-size: 40px;
+}
+
+p.str-progress {
+    font-size: 15px;
+    color: #ccc;
+}
