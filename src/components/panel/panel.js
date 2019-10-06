@@ -7,10 +7,9 @@ export default class Panel extends Component {
     //click = () => { this.props.cb() }
 
     render() {
-        const { result, progress } = this.props;
+        const result = this.props.data.join('');
         return (
-            <div className="panel">
-                <p className="str-progress">{progress}</p>
+            < div className="panel" >
                 <p className="str-result">{result}</p>
             </div>
         )
