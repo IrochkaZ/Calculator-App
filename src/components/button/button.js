@@ -3,14 +3,19 @@ import React, { Component } from 'react';
 import './button.css';
 
 export default class Button extends Component {
+    constructor(){
+        super();
+        this.click =  () => { 
+            const {val, onClick} = this.props;
+        }
+    }
 
-    //click = () => { this.props.cb() }
 
     render() {
-        const { cls, val } = this.props;
+        const { cls, val, onClick } = this.props;
         return (
             <div className={`${cls}`}>
-                <button onClick={this.click}>{val}</button>
+                <button onClick={onClick.bind(this)}>{val}</button>
             </div>
         )
     }
